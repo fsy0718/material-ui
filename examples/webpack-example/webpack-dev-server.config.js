@@ -16,7 +16,22 @@ const config = {
     'webpack/hot/dev-server',
     'webpack/hot/only-dev-server',
     path.join(__dirname, '/src/app/icon-button.js'),
-  ] 
+  ],
+   datePicker: [
+    'webpack/hot/dev-server',
+    'webpack/hot/only-dev-server',
+    path.join(__dirname, '/src/app/date-picker.js'),
+  ],
+   dialog: [
+     'webpack/hot/dev-server',
+     'webpack/hot/only-dev-server',
+     path.join(__dirname, '/src/app/dialog.js')
+   ], 
+  popover: [
+     'webpack/hot/dev-server',
+     'webpack/hot/only-dev-server',
+     path.join(__dirname, '/src/app/popover.js')
+   ] 
   },
   // Server Configuration options
   devServer: {
