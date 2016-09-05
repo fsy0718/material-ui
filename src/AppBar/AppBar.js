@@ -159,7 +159,11 @@ class AppBar extends Component {
     warning(!this.props.iconElementRight || !this.props.iconClassNameRight, `Properties iconElementRight
       and iconClassNameRight cannot be simultaneously defined. Please use one or the other.`);
   }
-
+  /**
+   * @function
+   * @param  {Event} event
+   * @listens
+   */
   handleTouchTapLeftIconButton = (event) => {
     if (this.props.onLeftIconButtonTouchTap) {
       this.props.onLeftIconButtonTouchTap(event);

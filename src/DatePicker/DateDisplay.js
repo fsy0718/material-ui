@@ -54,7 +54,11 @@ function getStyles(props, context, state) {
 
   return styles;
 }
-
+/**
+ * @desc requires {@link React~Compoment} | styles {@link transitions} | internal {@link SlideInTransitionGroup}
+ * @class DateDisplay
+ * @extends {Component}
+ */
 class DateDisplay extends Component {
   static propTypes = {
     DateTimeFormat: PropTypes.func.isRequired,
@@ -83,13 +87,18 @@ class DateDisplay extends Component {
     selectedYear: false,
     transitionDirection: 'up',
   };
-
+  /**
+   * @desc 加载组件前设置state的selectedYear的值
+   */
   componentWillMount() {
     if (!this.props.monthDaySelected) {
       this.setState({selectedYear: true});
     }
   }
-
+  /**
+   * 判断props中的selectedDate与nextProps的selectedDate的差值，决定动画的方向
+   * @param {Object} nextProps
+   */
   componentWillReceiveProps(nextProps) {
     if (nextProps.selectedDate !== this.props.selectedDate) {
       const direction = nextProps.selectedDate > this.props.selectedDate ? 'up' : 'down';
@@ -104,7 +113,9 @@ class DateDisplay extends Component {
       });
     }
   }
-
+  /**
+   * @emits {onTouchTapMonthDay} 调用props的onTouchTapMonthDay，并设置sate的selectedYear为false
+   */
   handleTouchTapMonthDay = () => {
     if (this.props.onTouchTapMonthDay && this.state.selectedYear) {
       this.props.onTouchTapMonthDay();
@@ -112,7 +123,9 @@ class DateDisplay extends Component {
 
     this.setState({selectedYear: false});
   };
-
+  /**
+   * @emits {onTouchTapYear} 调用props的onTouchTapYear，并设置state的selectedYear为true
+   */
   handleTouchTapYear = () => {
     if (this.props.onTouchTapYear && !this.props.disableYearSelection && !this.state.selectedYear) {
       this.props.onTouchTapYear();
@@ -122,7 +135,9 @@ class DateDisplay extends Component {
       this.setState({selectedYear: true});
     }
   };
-
+  /**
+   * @return {JSXElement} 日历的子组件  当前的年月日
+   */
   render() {
     const {
       DateTimeFormat,

@@ -22,7 +22,12 @@ const styles = {
     paddingTop: 12,
   },
 };
-
+/**
+ * 
+ * @desc requires {@link React~Component} | {@link IconButton} | internal {@link SlideIn}
+ * @class CalendarToolbar
+ * @extends {Component}
+ */
 class CalendarToolbar extends Component {
   static propTypes = {
     DateTimeFormat: PropTypes.func.isRequired,
@@ -45,7 +50,10 @@ class CalendarToolbar extends Component {
   state = {
     transitionDirection: 'up',
   };
-
+  /**
+   * 通过比较props的displayDate与nextProps的displayDate的大小，确定transitionDirection的方向，设置state的transitionDirection的值
+   * @param {Object} nextProps
+   */
   componentWillReceiveProps(nextProps) {
     if (nextProps.displayDate !== this.props.displayDate) {
       const direction = nextProps.displayDate > this.props.displayDate ? 'left' : 'right';
@@ -54,15 +62,23 @@ class CalendarToolbar extends Component {
       });
     }
   }
-
+  /**
+   * @desc 前一个月点击事件
+   * @emits {onMonthChange}
+   */
   handleTouchTapPrevMonth = () => {
     if (this.props.onMonthChange && this.props.prevMonth) this.props.onMonthChange(-1);
   };
-
+  /**
+   * @desc 后一个月点击事件
+   * @emits {onMonthChange} 
+   */
   handleTouchTapNextMonth = () => {
     if (this.props.onMonthChange && this.props.nextMonth) this.props.onMonthChange(1);
   };
-
+  /**
+   * @returns {JSXElement}
+   */
   render() {
     const {DateTimeFormat, locale, displayDate} = this.props;
 

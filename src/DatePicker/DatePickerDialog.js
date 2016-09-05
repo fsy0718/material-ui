@@ -7,6 +7,11 @@ import Popover from '../Popover/Popover';
 import PopoverAnimationVertical from '../Popover/PopoverAnimationVertical';
 import {dateTimeFormat} from './dateUtils';
 
+/**
+ * @desc requires {@link React~Component} | {@link keycode} | {@link Calendar} | {@link Dialog} | {@link Popover} | {@link PopoverAnimationVertical} | dateUtils {@link dateTimeFormat}
+ * @class DatePickerDialog
+ * @extends {Component}
+ */
 class DatePickerDialog extends Component {
   static propTypes = {
     DateTimeFormat: PropTypes.func,
@@ -47,7 +52,10 @@ class DatePickerDialog extends Component {
   state = {
     open: false,
   };
-
+  /**
+   * @desc 调用onShow方法并设置state的open为true
+   * @emits {onShow} 调用props的onShow方法 
+   */
   show = () => {
     if (this.props.onShow && !this.state.open) {
       this.props.onShow();
@@ -57,7 +65,10 @@ class DatePickerDialog extends Component {
       open: true,
     });
   };
-
+  /**
+   * @desc 调用props的onDismiss方法，并设置state的open为false
+   * @emits {onDismiss} 
+   */
   dismiss = () => {
     if (this.props.onDismiss && this.state.open) {
       this.props.onDismiss();
@@ -67,21 +78,30 @@ class DatePickerDialog extends Component {
       open: false,
     });
   };
-
+  /**
+   * @desc 如果props上的autoOk为true，则异步调用handleTouchTapOk方法 
+   */
   handleTouchTapDay = () => {
     if (this.props.autoOk) {
       setTimeout(this.handleTouchTapOk, 300);
     }
   };
-
+  /**
+   * @alias dismiss方法别名 
+   */
   handleTouchTapCancel = () => {
     this.dismiss();
   };
-
+  /**
+   * @alias dismiss方法别名
+   */
   handleRequestClose = () => {
     this.dismiss();
   };
-
+  /**
+   * @desc 调用props的onAccept方法，并设置state的open为false
+   * @emits {onAccept}
+   */
   handleTouchTapOk = () => {
     if (this.props.onAccept && !this.refs.calendar.isSelectedDateDisabled()) {
       this.props.onAccept(this.refs.calendar.getSelectedDate());
@@ -91,7 +111,10 @@ class DatePickerDialog extends Component {
       open: false,
     });
   };
-
+  /**
+   * @desc keyup的句柄,如果为enter键，则调用handleTouchTapOk方法
+   * @param {Event} 
+   */
   handleWindowKeyUp = (event) => {
     switch (keycode(event)) {
       case 'enter':
@@ -100,6 +123,9 @@ class DatePickerDialog extends Component {
     }
   };
 
+  /**
+   *@return {JSXElement} 返回一个包含Dialog[container为dialog]或Popver[container为inline]与Calendar的jsx元素 
+   */
   render() {
     const {
       DateTimeFormat,

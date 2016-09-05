@@ -3,7 +3,12 @@ import {dateTimeFormat, formatIso, isEqualDate} from './dateUtils';
 import DatePickerDialog from './DatePickerDialog';
 import TextField from '../TextField';
 import deprecated from '../utils/deprecatedPropType';
-
+/**
+ * @desc 日期选择器组件,依赖于{@see https://facebook.github.io/react/docs/component-api.html} | dateUtils {@link dateTimeFormat}、{@link formatIso}、{@link isEqualDate} | 
+ * {@link TextField} | {@link DatePickerDialog} | utils {@link deprecated}
+ * @class DatePicker
+ * @extends {React~Component}
+ */
 class DatePicker extends Component {
   static propTypes = {
     /**
@@ -140,7 +145,11 @@ class DatePicker extends Component {
     wordings: deprecated(PropTypes.object, `Instead, use \`cancelLabel\` and \`okLabel\`.
       It will be removed with v0.16.0.`),
   };
-
+  /**
+   * defaultProps
+   * @property {Object} defaultProps 默认属性
+   * @property {boolean} defaultProps.autoOk 选择日期后是否自动关闭日期选择器
+   */
   static defaultProps = {
     autoOk: false,
     container: 'dialog',
@@ -149,21 +158,33 @@ class DatePicker extends Component {
     firstDayOfWeek: 1,
     style: {},
   };
-
+  /**
+   * 
+   * @property {Object} contextTypes 作用域类型
+   * @static
+   */
   static contextTypes = {
     muiTheme: PropTypes.object.isRequired,
   };
-
+  /**
+   * @type {Object} state 初始化state值，如果未定义，则导致初始化组件时this.state为null
+   * @type {undefined} state.date 初始化日期值 
+   */
   state = {
     date: undefined,
   };
-
+  /**
+   * @desc 组件装载前设置state的date值
+   */
   componentWillMount() {
     this.setState({
       date: this.isControlled() ? this.getControlledDate() : this.props.defaultDate,
     });
   }
-
+  /**
+   * 在接收新props时，截取date，判断state的date与props的date是否一样，如果不一样，就更新state的date
+   * @param {Object} nextProps
+   */
   componentWillReceiveProps(nextProps) {
     if (this.isControlled()) {
       const newDate = this.getControlledDate(nextProps);
@@ -174,7 +195,10 @@ class DatePicker extends Component {
       }
     }
   }
-
+  /**
+   * 返回当前选择的日期
+   * @returns {Date}
+   */
   getDate() {
     return this.state.date;
   }
@@ -206,6 +230,11 @@ class DatePicker extends Component {
     this.openDialog();
   }
 
+  /**
+   *  接收日期的一个中间函数,如果当前props中无value字段，则设置state的date值，调用props中的onChange函数
+   * @emits {onChange} 调用props中的onChange
+   * @param {Date} date 日期
+   */
   handleAccept = (date) => {
     if (!this.isControlled()) {
       this.setState({
@@ -216,14 +245,22 @@ class DatePicker extends Component {
       this.props.onChange(null, date);
     }
   };
-
+  /**
+   * forcs句柄
+   * @param {Event} event 
+   */
   handleFocus = (event) => {
     event.target.blur();
     if (this.props.onFocus) {
       this.props.onFocus(event);
     }
   };
-
+  /**
+   * touchtap句柄,异步调用openDialog函数
+   * @emits {onTouchTap} 调用props中的onTouchTap事件
+   * @param {Event} event
+   * 
+   */
   handleTouchTap = (event) => {
     if (this.props.onTouchTap) {
       this.props.onTouchTap(event);
@@ -235,17 +272,28 @@ class DatePicker extends Component {
       }, 0);
     }
   };
-
+  /**
+   * 当前props中是否有value字段 
+   * @returns
+   */
   isControlled() {
     return this.props.hasOwnProperty('value');
   }
-
+  /**
+   * 获取props中的日期值
+   * @param {Object} [props=this.props]
+   * @returns {Date}
+   */
   getControlledDate(props = this.props) {
     if (props.value instanceof Date) {
       return props.value;
     }
   }
-
+  /**
+   * 调用props的DateTime格式化date对象
+   * @param {Date}
+   * @returns {String}
+   */
   formatDate = (date) => {
     if (this.props.locale) {
       const DateTimeFormat = this.props.DateTimeFormat || dateTimeFormat;
@@ -258,7 +306,10 @@ class DatePicker extends Component {
       return formatIso(date);
     }
   };
-
+  /**
+   * 渲染组件，包含TextField与DatePickerDialog
+   * @return {JSXElement}
+   */
   render() {
     const {
       DateTimeFormat,

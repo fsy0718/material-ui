@@ -25,6 +25,8 @@
     "build:icon-index": "babel-node ./scripts/icon-index-generator.js",
     "build:babel": "babel ./src --ignore *.spec.js --out-dir ./build",
     "build:copy-files": "babel-node ./scripts/copy-files.js",
+    "build:jsdoc3": "jsdoc -r -c .jsdoc.config.json",
+    "build:jsdoc": "npm run build:babel && npm run build:jsdoc3",
     "clean:build": "rimraf build",
     "lint": "eslint src docs/src test/integration && echo \"eslint: no lint errors\"",
     "lint:find-rules": "eslint-find-rules -u .eslintrc.js",

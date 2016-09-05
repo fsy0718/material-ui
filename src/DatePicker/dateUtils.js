@@ -111,7 +111,13 @@ export function localizedWeekday(DateTimeFormat, locale, day, firstDayOfWeek) {
   return weekdayFormatter.format(addDays(firstDayDate, day + firstDayOfWeek));
 }
 
-// Convert date to ISO 8601 (YYYY-MM-DD) date string, accounting for current timezone
+/**
+ *  Convert date to ISO 8601 (YYYY-MM-DD) date string, accounting for current timezone
+ * @param {Date} date
+ * @returns {string}
+ * @example
+ * formatIso(new Date('2016-09-05')) //2016-09-05
+ */
 export function formatIso(date) {
   return (new Date(`${date.toDateString()} 12:00:00 +0000`)).toISOString().substring(0, 10);
 }
@@ -141,7 +147,12 @@ export function isBetweenDates(dateToCheck, startDate, endDate) {
   return (!(isBeforeDate(dateToCheck, startDate)) &&
           !(isAfterDate(dateToCheck, endDate)));
 }
-
+/**
+ * 比较d1与d2的月份差值
+ * @param {Date} d1
+ * @param {Date} d2
+ * @returns {number}
+ */
 export function monthDiff(d1, d2) {
   let m;
   m = (d1.getFullYear() - d2.getFullYear()) * 12;
@@ -149,7 +160,12 @@ export function monthDiff(d1, d2) {
   m -= d2.getMonth();
   return m;
 }
-
+/**
+ * 比较d1与d2的年份差值
+ * @param {Date} d1
+ * @param {Date} d2
+ * @returns {number}
+ */
 export function yearDiff(d1, d2) {
   return ~~(monthDiff(d1, d2) / 12);
 }

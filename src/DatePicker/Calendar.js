@@ -24,7 +24,12 @@ import {
 } from './dateUtils';
 
 const daysArray = [...Array(7)];
-
+/**
+ * @desc requires {@link React~Component} | {@link react-event-listener} | {@link keycode} | styles {@link transitions} | {@link CalendarActionButtons} | {@link CalendarMonth} | {@link CalendarYear} | 
+ * {@link CalendarToolbar} | {@link DateDisplay} | internal {@link SlideIn}
+ * @class Calendar
+ * @extends {Component}
+ */
 class Calendar extends Component {
   static propTypes = {
     DateTimeFormat: PropTypes.func.isRequired,
@@ -66,14 +71,19 @@ class Calendar extends Component {
     transitionDirection: 'left',
     transitionEnter: true,
   };
-
+  /**
+   * 设置state的displayDate[props.initialDate所在月份的第一天]与selectedDate[props.initialDate值]值 
+   */
   componentWillMount() {
     this.setState({
       displayDate: getFirstDayOfMonth(this.props.initialDate),
       selectedDate: this.props.initialDate,
     });
   }
-
+  /**
+   * 如果当前props与待更新的props的initialDate值不一样，则更新state的displayData与selectedDate值
+   * @param {Object} nextProps
+   */
   componentWillReceiveProps(nextProps) {
     if (nextProps.initialDate !== this.props.initialDate) {
       const date = nextProps.initialDate || new Date();
@@ -83,7 +93,10 @@ class Calendar extends Component {
       });
     }
   }
-
+  /**
+   * 返回当前的日期值[即state的selectedDate]
+   * @returns {Date}
+   */
   getSelectedDate() {
     return this.state.selectedDate;
   }
@@ -163,19 +176,27 @@ class Calendar extends Component {
       nextMonth: monthDiff(this.state.displayDate, this.props.maxDate) < 0,
     };
   }
-
+  /**
+   * @desc 显示日历【可以只显示year】，设置state的displayMonthDay为true 
+   */
   handleTouchTapDateDisplayMonthDay = () => {
     this.setState({
       displayMonthDay: true,
     });
   };
-
+  /**
+   * @desc 设置state的displayMonthDay为false，只显示选择年的视图
+   */
   handleTouchTapDateDisplayYear = () => {
     this.setState({
       displayMonthDay: false,
     });
   };
-
+  /**
+   * @desc 如果同时按住alt与shift，则变动间隙为1年,按住alt间隙为月,否则间隙为天
+   * @param {Event} event
+   * @listens {KeyDown} keydown监听
+   */
   handleWindowKeyDown = (event) => {
     if (this.props.open) {
       switch (keycode(event)) {
@@ -221,7 +242,11 @@ class Calendar extends Component {
       }
     }
   };
-
+  /**
+   * 
+   * @返回CalendarYear的子组件
+   * @returns {JSXElement|undefined} 
+   */
   yearSelector() {
     if (!this.props.disableYearSelection) return (
       <CalendarYear
@@ -234,7 +259,9 @@ class Calendar extends Component {
       />
     );
   }
-
+  /**
+   * @returns {JSXElement}
+   */
   render() {
     const {prepareStyles} = this.context.muiTheme;
     const weekCount = getWeekArray(this.state.displayDate, this.props.firstDayOfWeek).length;

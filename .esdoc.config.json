@@ -1,0 +1,19 @@
+{
+  "source": ".//src",
+  "destination": "./esdoc",
+  "plugins": [
+    {"name": "esdoc-es7-plugin"}
+  ],
+  "includes": ["../src/\\.esdoc\\.externals\\.js", "\\.js"],
+  "excludes": ["\\.spec\\.js$","svg-icons","../src/index\\.js"],
+  "access": ["public", "protected"],
+  "autoPrivate": true,
+  "unexportIdentifier": false,
+  "undocumentIdentifier": true,
+  "builtinExternal": true,
+  "index": "./README.md",
+  "package": "./package.json",
+  "includeSource": true,
+  "title": "material-ui学习",
+  "lint": true
+}

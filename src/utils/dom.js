@@ -1,5 +1,13 @@
+/**
+ * @alias utils.dom
+ */
 export default {
-
+  /**
+   * 判断parent是否包含child元素
+   * @param  {HTMLDom}  parent
+   * @param  {HTMLDom}  child
+   * @return {Boolean}
+   */
   isDescendant(parent, child) {
     let node = child.parentNode;
 

@@ -7,6 +7,20 @@ import Paper from '../Paper';
 import throttle from 'lodash/throttle';
 import PopoverAnimationDefault from './PopoverAnimationDefault';
 
+/**
+ *
+ * @classdesc 弹出框
+ * @class Popover
+ * @requires module:react/Component
+ * @requires module:react/PropTypes
+ * @requires module:react-dom/ReactDOM
+ * @requires module:react-event-listener
+ * @requires namespace:utils.propTypes
+ * @requires module:Paper
+ * @requires module:lodash/throttle
+ * @requires module:PopoverAnimationDefault
+ * @extends {Component}
+ */
 class Popover extends Component {
   static propTypes = {
     /**

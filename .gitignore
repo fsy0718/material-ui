@@ -1,8 +1,12 @@
 node_modules
 npm-debug.log
+npm-debug.log.*
 *.log
 build
+jsdoc
+esdoc
 coverage
+
 
 # Exclude compiled files
 /lib

@@ -2,9 +2,15 @@ import {PropTypes} from 'react';
 
 const horizontal = PropTypes.oneOf(['left', 'middle', 'right']);
 const vertical = PropTypes.oneOf(['top', 'center', 'bottom']);
-
+/**
+ * @alias utils.proTypes
+ */
 export default {
-
+  /**
+   * @description  四个角的类型
+   * @type {string}
+   * @memberOf utils.proTypes
+   */
   corners: PropTypes.oneOf([
     'bottom-left',
     'bottom-right',

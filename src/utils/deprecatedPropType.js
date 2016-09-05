@@ -6,7 +6,12 @@
 import warning from 'warning';
 
 const warned = {};
-
+/**
+ * 弃用api提示函数
+ * @param {function} validator 检测函数 
+ * @param {string} reason
+ * @return {function(props:object, propName: string, location:*, propFullName:*, ...args:*)}
+ */
 export default function deprecated(validator, reason) {
   return function validate(
     props, propName, componentName, location, propFullName, ...args
