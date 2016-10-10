@@ -1,0 +1,582 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 207,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 13,
+      "column": 0
+    }
+  },
+  "sourceType": "module",
+  "body": [
+    {
+      "type": "ExportDefaultDeclaration",
+      "start": 0,
+      "end": 205,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 12,
+          "column": 2
+        }
+      },
+      "declaration": {
+        "type": "ObjectExpression",
+        "start": 15,
+        "end": 204,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 15
+          },
+          "end": {
+            "line": 12,
+            "column": 1
+          }
+        },
+        "properties": [
+          {
+            "type": "Property",
+            "start": 20,
+            "end": 30,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 2
+              },
+              "end": {
+                "line": 2,
+                "column": 12
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 20,
+              "end": 24,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 2
+                },
+                "end": {
+                  "line": 2,
+                  "column": 6
+                }
+              },
+              "name": "menu"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 26,
+              "end": 30,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 8
+                },
+                "end": {
+                  "line": 2,
+                  "column": 12
+                }
+              },
+              "value": 1000,
+              "rawValue": 1000,
+              "raw": "1000"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 35,
+            "end": 47,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 2
+              },
+              "end": {
+                "line": 3,
+                "column": 14
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 35,
+              "end": 41,
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 2
+                },
+                "end": {
+                  "line": 3,
+                  "column": 8
+                }
+              },
+              "name": "appBar"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 43,
+              "end": 47,
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 10
+                },
+                "end": {
+                  "line": 3,
+                  "column": 14
+                }
+              },
+              "value": 1100,
+              "rawValue": 1100,
+              "raw": "1100"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 52,
+            "end": 71,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 2
+              },
+              "end": {
+                "line": 4,
+                "column": 21
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 52,
+              "end": 65,
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 2
+                },
+                "end": {
+                  "line": 4,
+                  "column": 15
+                }
+              },
+              "name": "drawerOverlay"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 67,
+              "end": 71,
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 17
+                },
+                "end": {
+                  "line": 4,
+                  "column": 21
+                }
+              },
+              "value": 1200,
+              "rawValue": 1200,
+              "raw": "1200"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 76,
+            "end": 88,
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 2
+              },
+              "end": {
+                "line": 5,
+                "column": 14
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 76,
+              "end": 82,
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 2
+                },
+                "end": {
+                  "line": 5,
+                  "column": 8
+                }
+              },
+              "name": "drawer"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 84,
+              "end": 88,
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 10
+                },
+                "end": {
+                  "line": 5,
+                  "column": 14
+                }
+              },
+              "value": 1300,
+              "rawValue": 1300,
+              "raw": "1300"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 93,
+            "end": 112,
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 2
+              },
+              "end": {
+                "line": 6,
+                "column": 21
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 93,
+              "end": 106,
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 2
+                },
+                "end": {
+                  "line": 6,
+                  "column": 15
+                }
+              },
+              "name": "dialogOverlay"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 108,
+              "end": 112,
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 17
+                },
+                "end": {
+                  "line": 6,
+                  "column": 21
+                }
+              },
+              "value": 1400,
+              "rawValue": 1400,
+              "raw": "1400"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 117,
+            "end": 129,
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 2
+              },
+              "end": {
+                "line": 7,
+                "column": 14
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 117,
+              "end": 123,
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 2
+                },
+                "end": {
+                  "line": 7,
+                  "column": 8
+                }
+              },
+              "name": "dialog"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 125,
+              "end": 129,
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 10
+                },
+                "end": {
+                  "line": 7,
+                  "column": 14
+                }
+              },
+              "value": 1500,
+              "rawValue": 1500,
+              "raw": "1500"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 134,
+            "end": 145,
+            "loc": {
+              "start": {
+                "line": 8,
+                "column": 2
+              },
+              "end": {
+                "line": 8,
+                "column": 13
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 134,
+              "end": 139,
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 2
+                },
+                "end": {
+                  "line": 8,
+                  "column": 7
+                }
+              },
+              "name": "layer"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 141,
+              "end": 145,
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 9
+                },
+                "end": {
+                  "line": 8,
+                  "column": 13
+                }
+              },
+              "value": 2000,
+              "rawValue": 2000,
+              "raw": "2000"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 150,
+            "end": 163,
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 2
+              },
+              "end": {
+                "line": 9,
+                "column": 15
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 150,
+              "end": 157,
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 2
+                },
+                "end": {
+                  "line": 9,
+                  "column": 9
+                }
+              },
+              "name": "popover"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 159,
+              "end": 163,
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 11
+                },
+                "end": {
+                  "line": 9,
+                  "column": 15
+                }
+              },
+              "value": 2100,
+              "rawValue": 2100,
+              "raw": "2100"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 168,
+            "end": 182,
+            "loc": {
+              "start": {
+                "line": 10,
+                "column": 2
+              },
+              "end": {
+                "line": 10,
+                "column": 16
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 168,
+              "end": 176,
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 2
+                },
+                "end": {
+                  "line": 10,
+                  "column": 10
+                }
+              },
+              "name": "snackbar"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 178,
+              "end": 182,
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 12
+                },
+                "end": {
+                  "line": 10,
+                  "column": 16
+                }
+              },
+              "value": 2900,
+              "rawValue": 2900,
+              "raw": "2900"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 187,
+            "end": 200,
+            "loc": {
+              "start": {
+                "line": 11,
+                "column": 2
+              },
+              "end": {
+                "line": 11,
+                "column": 15
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 187,
+              "end": 194,
+              "loc": {
+                "start": {
+                  "line": 11,
+                  "column": 2
+                },
+                "end": {
+                  "line": 11,
+                  "column": 9
+                }
+              },
+              "name": "tooltip"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 196,
+              "end": 200,
+              "loc": {
+                "start": {
+                  "line": 11,
+                  "column": 11
+                },
+                "end": {
+                  "line": 11,
+                  "column": 15
+                }
+              },
+              "value": 3000,
+              "rawValue": 3000,
+              "raw": "3000"
+            },
+            "kind": "init"
+          }
+        ],
+        "leadingComments": [],
+        "trailingComments": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,1860 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 1478,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 32,
+      "column": 0
+    }
+  },
+  "sourceType": "module",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "start": 0,
+      "end": 33,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 33
+        }
+      },
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "start": 7,
+          "end": 12,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 12
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 7,
+            "end": 12,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 7
+              },
+              "end": {
+                "line": 1,
+                "column": 12
+              }
+            },
+            "name": "merge"
+          }
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "type": "Literal",
+        "start": 18,
+        "end": 32,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 18
+          },
+          "end": {
+            "line": 1,
+            "column": 32
+          }
+        },
+        "value": "lodash/merge",
+        "rawValue": "lodash/merge",
+        "raw": "'lodash/merge'"
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 35,
+      "end": 83,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 48
+        }
+      },
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "start": 42,
+          "end": 53,
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 7
+            },
+            "end": {
+              "line": 2,
+              "column": 18
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 42,
+            "end": 53,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 7
+              },
+              "end": {
+                "line": 2,
+                "column": 18
+              }
+            },
+            "name": "getMuiTheme"
+          }
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "type": "Literal",
+        "start": 59,
+        "end": 82,
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 24
+          },
+          "end": {
+            "line": 2,
+            "column": 47
+          }
+        },
+        "value": "../styles/getMuiTheme",
+        "rawValue": "../styles/getMuiTheme",
+        "raw": "'../styles/getMuiTheme'"
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 85,
+      "end": 115,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 30
+        }
+      },
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "start": 92,
+          "end": 99,
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 7
+            },
+            "end": {
+              "line": 3,
+              "column": 14
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "start": 92,
+            "end": 99,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 7
+              },
+              "end": {
+                "line": 3,
+                "column": 14
+              }
+            },
+            "name": "warning"
+          }
+        }
+      ],
+      "importKind": "value",
+      "source": {
+        "type": "Literal",
+        "start": 105,
+        "end": 114,
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 20
+          },
+          "end": {
+            "line": 3,
+            "column": 29
+          }
+        },
+        "value": "warning",
+        "rawValue": "warning",
+        "raw": "'warning'"
+      }
+    },
+    {
+      "type": "ExportDefaultDeclaration",
+      "start": 119,
+      "end": 1476,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 31,
+          "column": 4
+        }
+      },
+      "declaration": {
+        "type": "ObjectExpression",
+        "start": 137,
+        "end": 1475,
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 2
+          },
+          "end": {
+            "line": 31,
+            "column": 3
+          }
+        },
+        "properties": [
+          {
+            "type": "Property",
+            "start": 144,
+            "end": 412,
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 4
+              },
+              "end": {
+                "line": 12,
+                "column": 5
+              }
+            },
+            "method": true,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 144,
+              "end": 155,
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 4
+                },
+                "end": {
+                  "line": 7,
+                  "column": 15
+                }
+              },
+              "name": "getMuiTheme"
+            },
+            "kind": "init",
+            "value": {
+              "type": "FunctionExpression",
+              "start": 155,
+              "end": 412,
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 15
+                },
+                "end": {
+                  "line": 12,
+                  "column": 5
+                }
+              },
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "start": 156,
+                  "end": 165,
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 16
+                    },
+                    "end": {
+                      "line": 7,
+                      "column": 25
+                    }
+                  },
+                  "name": "baseTheme"
+                },
+                {
+                  "type": "Identifier",
+                  "start": 167,
+                  "end": 175,
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 27
+                    },
+                    "end": {
+                      "line": 7,
+                      "column": 35
+                    }
+                  },
+                  "name": "muiTheme"
+                }
+              ],
+              "body": {
+                "type": "BlockStatement",
+                "start": 177,
+                "end": 412,
+                "loc": {
+                  "start": {
+                    "line": 7,
+                    "column": 37
+                  },
+                  "end": {
+                    "line": 12,
+                    "column": 5
+                  }
+                },
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "start": 186,
+                    "end": 357,
+                    "loc": {
+                      "start": {
+                        "line": 8,
+                        "column": 6
+                      },
+                      "end": {
+                        "line": 10,
+                        "column": 43
+                      }
+                    },
+                    "expression": {
+                      "type": "CallExpression",
+                      "start": 186,
+                      "end": 356,
+                      "loc": {
+                        "start": {
+                          "line": 8,
+                          "column": 6
+                        },
+                        "end": {
+                          "line": 10,
+                          "column": 42
+                        }
+                      },
+                      "callee": {
+                        "type": "Identifier",
+                        "start": 186,
+                        "end": 193,
+                        "loc": {
+                          "start": {
+                            "line": 8,
+                            "column": 6
+                          },
+                          "end": {
+                            "line": 8,
+                            "column": 13
+                          }
+                        },
+                        "name": "warning"
+                      },
+                      "arguments": [
+                        {
+                          "type": "Literal",
+                          "start": 194,
+                          "end": 199,
+                          "loc": {
+                            "start": {
+                              "line": 8,
+                              "column": 14
+                            },
+                            "end": {
+                              "line": 8,
+                              "column": 19
+                            }
+                          },
+                          "value": false,
+                          "rawValue": false,
+                          "raw": "false"
+                        },
+                        {
+                          "type": "TemplateLiteral",
+                          "start": 201,
+                          "end": 355,
+                          "loc": {
+                            "start": {
+                              "line": 8,
+                              "column": 21
+                            },
+                            "end": {
+                              "line": 10,
+                              "column": 41
+                            }
+                          },
+                          "expressions": [],
+                          "quasis": [
+                            {
+                              "type": "TemplateElement",
+                              "start": 202,
+                              "end": 354,
+                              "loc": {
+                                "start": {
+                                  "line": 8,
+                                  "column": 22
+                                },
+                                "end": {
+                                  "line": 10,
+                                  "column": 40
+                                }
+                              },
+                              "value": {
+                                "raw": "ThemeManager is deprecated. please import getMuiTheme\n        directly from \"material-ui/styles/getMuiTheme\".\n        It will be removed with v0.16.0.",
+                                "cooked": "ThemeManager is deprecated. please import getMuiTheme\n        directly from \"material-ui/styles/getMuiTheme\".\n        It will be removed with v0.16.0."
+                              },
+                              "tail": true
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "ReturnStatement",
+                    "start": 365,
+                    "end": 405,
+                    "loc": {
+                      "start": {
+                        "line": 11,
+                        "column": 6
+                      },
+                      "end": {
+                        "line": 11,
+                        "column": 46
+                      }
+                    },
+                    "argument": {
+                      "type": "CallExpression",
+                      "start": 372,
+                      "end": 404,
+                      "loc": {
+                        "start": {
+                          "line": 11,
+                          "column": 13
+                        },
+                        "end": {
+                          "line": 11,
+                          "column": 45
+                        }
+                      },
+                      "callee": {
+                        "type": "Identifier",
+                        "start": 372,
+                        "end": 383,
+                        "loc": {
+                          "start": {
+                            "line": 11,
+                            "column": 13
+                          },
+                          "end": {
+                            "line": 11,
+                            "column": 24
+                          }
+                        },
+                        "name": "getMuiTheme"
+                      },
+                      "arguments": [
+                        {
+                          "type": "Identifier",
+                          "start": 384,
+                          "end": 393,
+                          "loc": {
+                            "start": {
+                              "line": 11,
+                              "column": 25
+                            },
+                            "end": {
+                              "line": 11,
+                              "column": 34
+                            }
+                          },
+                          "name": "baseTheme"
+                        },
+                        {
+                          "type": "Identifier",
+                          "start": 395,
+                          "end": 403,
+                          "loc": {
+                            "start": {
+                              "line": 11,
+                              "column": 36
+                            },
+                            "end": {
+                              "line": 11,
+                              "column": 44
+                            }
+                          },
+                          "name": "muiTheme"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "Property",
+            "start": 419,
+            "end": 756,
+            "loc": {
+              "start": {
+                "line": 13,
+                "column": 4
+              },
+              "end": {
+                "line": 18,
+                "column": 5
+              }
+            },
+            "method": true,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 419,
+              "end": 440,
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 4
+                },
+                "end": {
+                  "line": 13,
+                  "column": 25
+                }
+              },
+              "name": "modifyRawThemeSpacing"
+            },
+            "kind": "init",
+            "value": {
+              "type": "FunctionExpression",
+              "start": 440,
+              "end": 756,
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 25
+                },
+                "end": {
+                  "line": 18,
+                  "column": 5
+                }
+              },
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "start": 441,
+                  "end": 449,
+                  "loc": {
+                    "start": {
+                      "line": 13,
+                      "column": 26
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 34
+                    }
+                  },
+                  "name": "muiTheme"
+                },
+                {
+                  "type": "Identifier",
+                  "start": 451,
+                  "end": 458,
+                  "loc": {
+                    "start": {
+                      "line": 13,
+                      "column": 36
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 43
+                    }
+                  },
+                  "name": "spacing"
+                }
+              ],
+              "body": {
+                "type": "BlockStatement",
+                "start": 460,
+                "end": 756,
+                "loc": {
+                  "start": {
+                    "line": 13,
+                    "column": 45
+                  },
+                  "end": {
+                    "line": 18,
+                    "column": 5
+                  }
+                },
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "start": 469,
+                    "end": 680,
+                    "loc": {
+                      "start": {
+                        "line": 14,
+                        "column": 6
+                      },
+                      "end": {
+                        "line": 16,
+                        "column": 43
+                      }
+                    },
+                    "expression": {
+                      "type": "CallExpression",
+                      "start": 469,
+                      "end": 679,
+                      "loc": {
+                        "start": {
+                          "line": 14,
+                          "column": 6
+                        },
+                        "end": {
+                          "line": 16,
+                          "column": 42
+                        }
+                      },
+                      "callee": {
+                        "type": "Identifier",
+                        "start": 469,
+                        "end": 476,
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 6
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 13
+                          }
+                        },
+                        "name": "warning"
+                      },
+                      "arguments": [
+                        {
+                          "type": "Literal",
+                          "start": 477,
+                          "end": 482,
+                          "loc": {
+                            "start": {
+                              "line": 14,
+                              "column": 14
+                            },
+                            "end": {
+                              "line": 14,
+                              "column": 19
+                            }
+                          },
+                          "value": false,
+                          "rawValue": false,
+                          "raw": "false"
+                        },
+                        {
+                          "type": "TemplateLiteral",
+                          "start": 484,
+                          "end": 678,
+                          "loc": {
+                            "start": {
+                              "line": 14,
+                              "column": 21
+                            },
+                            "end": {
+                              "line": 16,
+                              "column": 41
+                            }
+                          },
+                          "expressions": [],
+                          "quasis": [
+                            {
+                              "type": "TemplateElement",
+                              "start": 485,
+                              "end": 677,
+                              "loc": {
+                                "start": {
+                                  "line": 14,
+                                  "column": 22
+                                },
+                                "end": {
+                                  "line": 16,
+                                  "column": 40
+                                }
+                              },
+                              "value": {
+                                "raw": "modifyRawThemeSpacing is deprecated. please use getMuiTheme\n        to modify your theme directly. http://www.material-ui.com/#/customization/themes.\n        It will be removed with v0.16.0.",
+                                "cooked": "modifyRawThemeSpacing is deprecated. please use getMuiTheme\n        to modify your theme directly. http://www.material-ui.com/#/customization/themes.\n        It will be removed with v0.16.0."
+                              },
+                              "tail": true
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "ReturnStatement",
+                    "start": 688,
+                    "end": 749,
+                    "loc": {
+                      "start": {
+                        "line": 17,
+                        "column": 6
+                      },
+                      "end": {
+                        "line": 17,
+                        "column": 67
+                      }
+                    },
+                    "argument": {
+                      "type": "CallExpression",
+                      "start": 695,
+                      "end": 748,
+                      "loc": {
+                        "start": {
+                          "line": 17,
+                          "column": 13
+                        },
+                        "end": {
+                          "line": 17,
+                          "column": 66
+                        }
+                      },
+                      "callee": {
+                        "type": "Identifier",
+                        "start": 695,
+                        "end": 706,
+                        "loc": {
+                          "start": {
+                            "line": 17,
+                            "column": 13
+                          },
+                          "end": {
+                            "line": 17,
+                            "column": 24
+                          }
+                        },
+                        "name": "getMuiTheme"
+                      },
+                      "arguments": [
+                        {
+                          "type": "CallExpression",
+                          "start": 707,
+                          "end": 747,
+                          "loc": {
+                            "start": {
+                              "line": 17,
+                              "column": 25
+                            },
+                            "end": {
+                              "line": 17,
+                              "column": 65
+                            }
+                          },
+                          "callee": {
+                            "type": "Identifier",
+                            "start": 707,
+                            "end": 712,
+                            "loc": {
+                              "start": {
+                                "line": 17,
+                                "column": 25
+                              },
+                              "end": {
+                                "line": 17,
+                                "column": 30
+                              }
+                            },
+                            "name": "merge"
+                          },
+                          "arguments": [
+                            {
+                              "type": "ObjectExpression",
+                              "start": 713,
+                              "end": 715,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 31
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 33
+                                }
+                              },
+                              "properties": []
+                            },
+                            {
+                              "type": "MemberExpression",
+                              "start": 717,
+                              "end": 735,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 35
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 53
+                                }
+                              },
+                              "object": {
+                                "type": "Identifier",
+                                "start": 717,
+                                "end": 725,
+                                "loc": {
+                                  "start": {
+                                    "line": 17,
+                                    "column": 35
+                                  },
+                                  "end": {
+                                    "line": 17,
+                                    "column": 43
+                                  }
+                                },
+                                "name": "muiTheme"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "start": 726,
+                                "end": 735,
+                                "loc": {
+                                  "start": {
+                                    "line": 17,
+                                    "column": 44
+                                  },
+                                  "end": {
+                                    "line": 17,
+                                    "column": 53
+                                  }
+                                },
+                                "name": "baseTheme"
+                              },
+                              "computed": false
+                            },
+                            {
+                              "type": "ObjectExpression",
+                              "start": 737,
+                              "end": 746,
+                              "loc": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 55
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 64
+                                }
+                              },
+                              "properties": [
+                                {
+                                  "type": "Property",
+                                  "start": 738,
+                                  "end": 745,
+                                  "loc": {
+                                    "start": {
+                                      "line": 17,
+                                      "column": 56
+                                    },
+                                    "end": {
+                                      "line": 17,
+                                      "column": 63
+                                    }
+                                  },
+                                  "method": false,
+                                  "shorthand": true,
+                                  "computed": false,
+                                  "key": {
+                                    "type": "Identifier",
+                                    "start": 738,
+                                    "end": 745,
+                                    "loc": {
+                                      "start": {
+                                        "line": 17,
+                                        "column": 56
+                                      },
+                                      "end": {
+                                        "line": 17,
+                                        "column": 63
+                                      }
+                                    },
+                                    "name": "spacing"
+                                  },
+                                  "kind": "init",
+                                  "value": {
+                                    "type": "Identifier",
+                                    "start": 738,
+                                    "end": 745,
+                                    "loc": {
+                                      "start": {
+                                        "line": 17,
+                                        "column": 56
+                                      },
+                                      "end": {
+                                        "line": 17,
+                                        "column": 63
+                                      }
+                                    },
+                                    "name": "spacing"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "Property",
+            "start": 763,
+            "end": 1113,
+            "loc": {
+              "start": {
+                "line": 19,
+                "column": 4
+              },
+              "end": {
+                "line": 24,
+                "column": 5
+              }
+            },
+            "method": true,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 763,
+              "end": 784,
+              "loc": {
+                "start": {
+                  "line": 19,
+                  "column": 4
+                },
+                "end": {
+                  "line": 19,
+                  "column": 25
+                }
+              },
+              "name": "modifyRawThemePalette"
+            },
+            "kind": "init",
+            "value": {
+              "type": "FunctionExpression",
+              "start": 784,
+              "end": 1113,
+              "loc": {
+                "start": {
+                  "line": 19,
+                  "column": 25
+                },
+                "end": {
+                  "line": 24,
+                  "column": 5
+                }
+              },
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "start": 785,
+                  "end": 793,
+                  "loc": {
+                    "start": {
+                      "line": 19,
+                      "column": 26
+                    },
+                    "end": {
+                      "line": 19,
+                      "column": 34
+                    }
+                  },
+                  "name": "muiTheme"
+                },
+                {
+                  "type": "Identifier",
+                  "start": 795,
+                  "end": 802,
+                  "loc": {
+                    "start": {
+                      "line": 19,
+                      "column": 36
+                    },
+                    "end": {
+                      "line": 19,
+                      "column": 43
+                    }
+                  },
+                  "name": "palette"
+                }
+              ],
+              "body": {
+                "type": "BlockStatement",
+                "start": 804,
+                "end": 1113,
+                "loc": {
+                  "start": {
+                    "line": 19,
+                    "column": 45
+                  },
+                  "end": {
+                    "line": 24,
+                    "column": 5
+                  }
+                },
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "start": 813,
+                    "end": 1024,
+                    "loc": {
+                      "start": {
+                        "line": 20,
+                        "column": 6
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 43
+                      }
+                    },
+                    "expression": {
+                      "type": "CallExpression",
+                      "start": 813,
+                      "end": 1023,
+                      "loc": {
+                        "start": {
+                          "line": 20,
+                          "column": 6
+                        },
+                        "end": {
+                          "line": 22,
+                          "column": 42
+                        }
+                      },
+                      "callee": {
+                        "type": "Identifier",
+                        "start": 813,
+                        "end": 820,
+                        "loc": {
+                          "start": {
+                            "line": 20,
+                            "column": 6
+                          },
+                          "end": {
+                            "line": 20,
+                            "column": 13
+                          }
+                        },
+                        "name": "warning"
+                      },
+                      "arguments": [
+                        {
+                          "type": "Literal",
+                          "start": 821,
+                          "end": 826,
+                          "loc": {
+                            "start": {
+                              "line": 20,
+                              "column": 14
+                            },
+                            "end": {
+                              "line": 20,
+                              "column": 19
+                            }
+                          },
+                          "value": false,
+                          "rawValue": false,
+                          "raw": "false"
+                        },
+                        {
+                          "type": "TemplateLiteral",
+                          "start": 828,
+                          "end": 1022,
+                          "loc": {
+                            "start": {
+                              "line": 20,
+                              "column": 21
+                            },
+                            "end": {
+                              "line": 22,
+                              "column": 41
+                            }
+                          },
+                          "expressions": [],
+                          "quasis": [
+                            {
+                              "type": "TemplateElement",
+                              "start": 829,
+                              "end": 1021,
+                              "loc": {
+                                "start": {
+                                  "line": 20,
+                                  "column": 22
+                                },
+                                "end": {
+                                  "line": 22,
+                                  "column": 40
+                                }
+                              },
+                              "value": {
+                                "raw": "modifyRawThemePalette is deprecated. please use getMuiTheme\n        to modify your theme directly. http://www.material-ui.com/#/customization/themes.\n        It will be removed with v0.16.0.",
+                                "cooked": "modifyRawThemePalette is deprecated. please use getMuiTheme\n        to modify your theme directly. http://www.material-ui.com/#/customization/themes.\n        It will be removed with v0.16.0."
+                              },
+                              "tail": true
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "ReturnStatement",
+                    "start": 1032,
+                    "end": 1106,
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 6
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 80
+                      }
+                    },
+                    "argument": {
+                      "type": "CallExpression",
+                      "start": 1039,
+                      "end": 1105,
+                      "loc": {
+                        "start": {
+                          "line": 23,
+                          "column": 13
+                        },
+                        "end": {
+                          "line": 23,
+                          "column": 79
+                        }
+                      },
+                      "callee": {
+                        "type": "Identifier",
+                        "start": 1039,
+                        "end": 1050,
+                        "loc": {
+                          "start": {
+                            "line": 23,
+                            "column": 13
+                          },
+                          "end": {
+                            "line": 23,
+                            "column": 24
+                          }
+                        },
+                        "name": "getMuiTheme"
+                      },
+                      "arguments": [
+                        {
+                          "type": "CallExpression",
+                          "start": 1051,
+                          "end": 1104,
+                          "loc": {
+                            "start": {
+                              "line": 23,
+                              "column": 25
+                            },
+                            "end": {
+                              "line": 23,
+                              "column": 78
+                            }
+                          },
+                          "callee": {
+                            "type": "Identifier",
+                            "start": 1051,
+                            "end": 1056,
+                            "loc": {
+                              "start": {
+                                "line": 23,
+                                "column": 25
+                              },
+                              "end": {
+                                "line": 23,
+                                "column": 30
+                              }
+                            },
+                            "name": "merge"
+                          },
+                          "arguments": [
+                            {
+                              "type": "ObjectExpression",
+                              "start": 1057,
+                              "end": 1059,
+                              "loc": {
+                                "start": {
+                                  "line": 23,
+                                  "column": 31
+                                },
+                                "end": {
+                                  "line": 23,
+                                  "column": 33
+                                }
+                              },
+                              "properties": []
+                            },
+                            {
+                              "type": "MemberExpression",
+                              "start": 1061,
+                              "end": 1079,
+                              "loc": {
+                                "start": {
+                                  "line": 23,
+                                  "column": 35
+                                },
+                                "end": {
+                                  "line": 23,
+                                  "column": 53
+                                }
+                              },
+                              "object": {
+                                "type": "Identifier",
+                                "start": 1061,
+                                "end": 1069,
+                                "loc": {
+                                  "start": {
+                                    "line": 23,
+                                    "column": 35
+                                  },
+                                  "end": {
+                                    "line": 23,
+                                    "column": 43
+                                  }
+                                },
+                                "name": "muiTheme"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "start": 1070,
+                                "end": 1079,
+                                "loc": {
+                                  "start": {
+                                    "line": 23,
+                                    "column": 44
+                                  },
+                                  "end": {
+                                    "line": 23,
+                                    "column": 53
+                                  }
+                                },
+                                "name": "baseTheme"
+                              },
+                              "computed": false
+                            },
+                            {
+                              "type": "ObjectExpression",
+                              "start": 1081,
+                              "end": 1103,
+                              "loc": {
+                                "start": {
+                                  "line": 23,
+                                  "column": 55
+                                },
+                                "end": {
+                                  "line": 23,
+                                  "column": 77
+                                }
+                              },
+                              "properties": [
+                                {
+                                  "type": "Property",
+                                  "start": 1082,
+                                  "end": 1102,
+                                  "loc": {
+                                    "start": {
+                                      "line": 23,
+                                      "column": 56
+                                    },
+                                    "end": {
+                                      "line": 23,
+                                      "column": 76
+                                    }
+                                  },
+                                  "method": false,
+                                  "shorthand": false,
+                                  "computed": false,
+                                  "key": {
+                                    "type": "Identifier",
+                                    "start": 1082,
+                                    "end": 1091,
+                                    "loc": {
+                                      "start": {
+                                        "line": 23,
+                                        "column": 56
+                                      },
+                                      "end": {
+                                        "line": 23,
+                                        "column": 65
+                                      }
+                                    },
+                                    "name": "baseTheme"
+                                  },
+                                  "value": {
+                                    "type": "ObjectExpression",
+                                    "start": 1093,
+                                    "end": 1102,
+                                    "loc": {
+                                      "start": {
+                                        "line": 23,
+                                        "column": 67
+                                      },
+                                      "end": {
+                                        "line": 23,
+                                        "column": 76
+                                      }
+                                    },
+                                    "properties": [
+                                      {
+                                        "type": "Property",
+                                        "start": 1094,
+                                        "end": 1101,
+                                        "loc": {
+                                          "start": {
+                                            "line": 23,
+                                            "column": 68
+                                          },
+                                          "end": {
+                                            "line": 23,
+                                            "column": 75
+                                          }
+                                        },
+                                        "method": false,
+                                        "shorthand": true,
+                                        "computed": false,
+                                        "key": {
+                                          "type": "Identifier",
+                                          "start": 1094,
+                                          "end": 1101,
+                                          "loc": {
+                                            "start": {
+                                              "line": 23,
+                                              "column": 68
+                                            },
+                                            "end": {
+                                              "line": 23,
+                                              "column": 75
+                                            }
+                                          },
+                                          "name": "palette"
+                                        },
+                                        "kind": "init",
+                                        "value": {
+                                          "type": "Identifier",
+                                          "start": 1094,
+                                          "end": 1101,
+                                          "loc": {
+                                            "start": {
+                                              "line": 23,
+                                              "column": 68
+                                            },
+                                            "end": {
+                                              "line": 23,
+                                              "column": 75
+                                            }
+                                          },
+                                          "name": "palette"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "kind": "init"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "type": "Property",
+            "start": 1120,
+            "end": 1469,
+            "loc": {
+              "start": {
+                "line": 25,
+                "column": 4
+              },
+              "end": {
+                "line": 30,
+                "column": 5
+              }
+            },
+            "method": true,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 1120,
+              "end": 1144,
+              "loc": {
+                "start": {
+                  "line": 25,
+                  "column": 4
+                },
+                "end": {
+                  "line": 25,
+                  "column": 28
+                }
+              },
+              "name": "modifyRawThemeFontFamily"
+            },
+            "kind": "init",
+            "value": {
+              "type": "FunctionExpression",
+              "start": 1144,
+              "end": 1469,
+              "loc": {
+                "start": {
+                  "line": 25,
+                  "column": 28
+                },
+                "end": {
+                  "line": 30,
+                  "column": 5
+                }
+              },
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "start": 1145,
+                  "end": 1153,
+                  "loc": {
+                    "start": {
+                      "line": 25,
+                      "column": 29
+                    },
+                    "end": {
+                      "line": 25,
+                      "column": 37
+                    }
+                  },
+                  "name": "muiTheme"
+                },
+                {
+                  "type": "Identifier",
+                  "start": 1155,
+                  "end": 1165,
+                  "loc": {
+                    "start": {
+                      "line": 25,
+                      "column": 39
+                    },
+                    "end": {
+                      "line": 25,
+                      "column": 49
+                    }
+                  },
+                  "name": "fontFamily"
+                }
+              ],
+              "body": {
+                "type": "BlockStatement",
+                "start": 1167,
+                "end": 1469,
+                "loc": {
+                  "start": {
+                    "line": 25,
+                    "column": 51
+                  },
+                  "end": {
+                    "line": 30,
+                    "column": 5
+                  }
+                },
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "start": 1176,
+                    "end": 1390,
+                    "loc": {
+                      "start": {
+                        "line": 26,
+                        "column": 6
+                      },
+                      "end": {
+                        "line": 28,
+                        "column": 43
+                      }
+                    },
+                    "expression": {
+                      "type": "CallExpression",
+                      "start": 1176,
+                      "end": 1389,
+                      "loc": {
+                        "start": {
+                          "line": 26,
+                          "column": 6
+                        },
+                        "end": {
+                          "line": 28,
+                          "column": 42
+                        }
+                      },
+                      "callee": {
+                        "type": "Identifier",
+                        "start": 1176,
+                        "end": 1183,
+                        "loc": {
+                          "start": {
+                            "line": 26,
+                            "column": 6
+                          },
+                          "end": {
+                            "line": 26,
+                            "column": 13
+                          }
+                        },
+                        "name": "warning"
+                      },
+                      "arguments": [
+                        {
+                          "type": "Literal",
+                          "start": 1184,
+                          "end": 1189,
+                          "loc": {
+                            "start": {
+                              "line": 26,
+                              "column": 14
+                            },
+                            "end": {
+                              "line": 26,
+                              "column": 19
+                            }
+                          },
+                          "value": false,
+                          "rawValue": false,
+                          "raw": "false"
+                        },
+                        {
+                          "type": "TemplateLiteral",
+                          "start": 1191,
+                          "end": 1388,
+                          "loc": {
+                            "start": {
+                              "line": 26,
+                              "column": 21
+                            },
+                            "end": {
+                              "line": 28,
+                              "column": 41
+                            }
+                          },
+                          "expressions": [],
+                          "quasis": [
+                            {
+                              "type": "TemplateElement",
+                              "start": 1192,
+                              "end": 1387,
+                              "loc": {
+                                "start": {
+                                  "line": 26,
+                                  "column": 22
+                                },
+                                "end": {
+                                  "line": 28,
+                                  "column": 40
+                                }
+                              },
+                              "value": {
+                                "raw": "modifyRawThemeFontFamily is deprecated. please use getMuiTheme\n        to modify your theme directly. http://www.material-ui.com/#/customization/themes.\n        It will be removed with v0.16.0.",
+                                "cooked": "modifyRawThemeFontFamily is deprecated. please use getMuiTheme\n        to modify your theme directly. http://www.material-ui.com/#/customization/themes.\n        It will be removed with v0.16.0."
+                              },
+                              "tail": true
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "ReturnStatement",
+                    "start": 1398,
+                    "end": 1462,
+                    "loc": {
+                      "start": {
+                        "line": 29,
+                        "column": 6
+                      },
+                      "end": {
+                        "line": 29,
+                        "column": 70
+                      }
+                    },
+                    "argument": {
+                      "type": "CallExpression",
+                      "start": 1405,
+                      "end": 1461,
+                      "loc": {
+                        "start": {
+                          "line": 29,
+                          "column": 13
+                        },
+                        "end": {
+                          "line": 29,
+                          "column": 69
+                        }
+                      },
+                      "callee": {
+                        "type": "Identifier",
+                        "start": 1405,
+                        "end": 1416,
+                        "loc": {
+                          "start": {
+                            "line": 29,
+                            "column": 13
+                          },
+                          "end": {
+                            "line": 29,
+                            "column": 24
+                          }
+                        },
+                        "name": "getMuiTheme"
+                      },
+                      "arguments": [
+                        {
+                          "type": "CallExpression",
+                          "start": 1417,
+                          "end": 1460,
+                          "loc": {
+                            "start": {
+                              "line": 29,
+                              "column": 25
+                            },
+                            "end": {
+                              "line": 29,
+                              "column": 68
+                            }
+                          },
+                          "callee": {
+                            "type": "Identifier",
+                            "start": 1417,
+                            "end": 1422,
+                            "loc": {
+                              "start": {
+                                "line": 29,
+                                "column": 25
+                              },
+                              "end": {
+                                "line": 29,
+                                "column": 30
+                              }
+                            },
+                            "name": "merge"
+                          },
+                          "arguments": [
+                            {
+                              "type": "ObjectExpression",
+                              "start": 1423,
+                              "end": 1425,
+                              "loc": {
+                                "start": {
+                                  "line": 29,
+                                  "column": 31
+                                },
+                                "end": {
+                                  "line": 29,
+                                  "column": 33
+                                }
+                              },
+                              "properties": []
+                            },
+                            {
+                              "type": "MemberExpression",
+                              "start": 1427,
+                              "end": 1445,
+                              "loc": {
+                                "start": {
+                                  "line": 29,
+                                  "column": 35
+                                },
+                                "end": {
+                                  "line": 29,
+                                  "column": 53
+                                }
+                              },
+                              "object": {
+                                "type": "Identifier",
+                                "start": 1427,
+                                "end": 1435,
+                                "loc": {
+                                  "start": {
+                                    "line": 29,
+                                    "column": 35
+                                  },
+                                  "end": {
+                                    "line": 29,
+                                    "column": 43
+                                  }
+                                },
+                                "name": "muiTheme"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "start": 1436,
+                                "end": 1445,
+                                "loc": {
+                                  "start": {
+                                    "line": 29,
+                                    "column": 44
+                                  },
+                                  "end": {
+                                    "line": 29,
+                                    "column": 53
+                                  }
+                                },
+                                "name": "baseTheme"
+                              },
+                              "computed": false
+                            },
+                            {
+                              "type": "ObjectExpression",
+                              "start": 1447,
+                              "end": 1459,
+                              "loc": {
+                                "start": {
+                                  "line": 29,
+                                  "column": 55
+                                },
+                                "end": {
+                                  "line": 29,
+                                  "column": 67
+                                }
+                              },
+                              "properties": [
+                                {
+                                  "type": "Property",
+                                  "start": 1448,
+                                  "end": 1458,
+                                  "loc": {
+                                    "start": {
+                                      "line": 29,
+                                      "column": 56
+                                    },
+                                    "end": {
+                                      "line": 29,
+                                      "column": 66
+                                    }
+                                  },
+                                  "method": false,
+                                  "shorthand": true,
+                                  "computed": false,
+                                  "key": {
+                                    "type": "Identifier",
+                                    "start": 1448,
+                                    "end": 1458,
+                                    "loc": {
+                                      "start": {
+                                        "line": 29,
+                                        "column": 56
+                                      },
+                                      "end": {
+                                        "line": 29,
+                                        "column": 66
+                                      }
+                                    },
+                                    "name": "fontFamily"
+                                  },
+                                  "kind": "init",
+                                  "value": {
+                                    "type": "Identifier",
+                                    "start": 1448,
+                                    "end": 1458,
+                                    "loc": {
+                                      "start": {
+                                        "line": 29,
+                                        "column": 56
+                                      },
+                                      "end": {
+                                        "line": 29,
+                                        "column": 66
+                                      }
+                                    },
+                                    "name": "fontFamily"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "leadingComments": [],
+        "trailingComments": []
+      }
+    }
+  ]
+}

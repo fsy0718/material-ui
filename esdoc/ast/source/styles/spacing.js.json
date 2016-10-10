@@ -1,0 +1,635 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 342,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 15,
+      "column": 0
+    }
+  },
+  "sourceType": "module",
+  "body": [
+    {
+      "type": "ExportDefaultDeclaration",
+      "start": 0,
+      "end": 340,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 14,
+          "column": 2
+        }
+      },
+      "declaration": {
+        "type": "ObjectExpression",
+        "start": 15,
+        "end": 339,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 15
+          },
+          "end": {
+            "line": 14,
+            "column": 1
+          }
+        },
+        "properties": [
+          {
+            "type": "Property",
+            "start": 20,
+            "end": 32,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 2
+              },
+              "end": {
+                "line": 2,
+                "column": 14
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 20,
+              "end": 28,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 2
+                },
+                "end": {
+                  "line": 2,
+                  "column": 10
+                }
+              },
+              "name": "iconSize"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 30,
+              "end": 32,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 12
+                },
+                "end": {
+                  "line": 2,
+                  "column": 14
+                }
+              },
+              "value": 24,
+              "rawValue": 24,
+              "raw": "24"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 39,
+            "end": 56,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 2
+              },
+              "end": {
+                "line": 4,
+                "column": 19
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 39,
+              "end": 52,
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 2
+                },
+                "end": {
+                  "line": 4,
+                  "column": 15
+                }
+              },
+              "name": "desktopGutter"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 54,
+              "end": 56,
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 17
+                },
+                "end": {
+                  "line": 4,
+                  "column": 19
+                }
+              },
+              "value": 24,
+              "rawValue": 24,
+              "raw": "24"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 61,
+            "end": 82,
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 2
+              },
+              "end": {
+                "line": 5,
+                "column": 23
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 61,
+              "end": 78,
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 2
+                },
+                "end": {
+                  "line": 5,
+                  "column": 19
+                }
+              },
+              "name": "desktopGutterMore"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 80,
+              "end": 82,
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 21
+                },
+                "end": {
+                  "line": 5,
+                  "column": 23
+                }
+              },
+              "value": 32,
+              "rawValue": 32,
+              "raw": "32"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 87,
+            "end": 108,
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 2
+              },
+              "end": {
+                "line": 6,
+                "column": 23
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 87,
+              "end": 104,
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 2
+                },
+                "end": {
+                  "line": 6,
+                  "column": 19
+                }
+              },
+              "name": "desktopGutterLess"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 106,
+              "end": 108,
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 21
+                },
+                "end": {
+                  "line": 6,
+                  "column": 23
+                }
+              },
+              "value": 16,
+              "rawValue": 16,
+              "raw": "16"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 113,
+            "end": 133,
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 2
+              },
+              "end": {
+                "line": 7,
+                "column": 22
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 113,
+              "end": 130,
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 2
+                },
+                "end": {
+                  "line": 7,
+                  "column": 19
+                }
+              },
+              "name": "desktopGutterMini"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 132,
+              "end": 133,
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 21
+                },
+                "end": {
+                  "line": 7,
+                  "column": 22
+                }
+              },
+              "value": 8,
+              "rawValue": 8,
+              "raw": "8"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 138,
+            "end": 165,
+            "loc": {
+              "start": {
+                "line": 8,
+                "column": 2
+              },
+              "end": {
+                "line": 8,
+                "column": 29
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 138,
+              "end": 161,
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 2
+                },
+                "end": {
+                  "line": 8,
+                  "column": 25
+                }
+              },
+              "name": "desktopKeylineIncrement"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 163,
+              "end": 165,
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 27
+                },
+                "end": {
+                  "line": 8,
+                  "column": 29
+                }
+              },
+              "value": 64,
+              "rawValue": 64,
+              "raw": "64"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 170,
+            "end": 203,
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 2
+              },
+              "end": {
+                "line": 9,
+                "column": 35
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 170,
+              "end": 199,
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 2
+                },
+                "end": {
+                  "line": 9,
+                  "column": 31
+                }
+              },
+              "name": "desktopDropDownMenuItemHeight"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 201,
+              "end": 203,
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 33
+                },
+                "end": {
+                  "line": 9,
+                  "column": 35
+                }
+              },
+              "value": 32,
+              "rawValue": 32,
+              "raw": "32"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 208,
+            "end": 239,
+            "loc": {
+              "start": {
+                "line": 10,
+                "column": 2
+              },
+              "end": {
+                "line": 10,
+                "column": 33
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 208,
+              "end": 235,
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 2
+                },
+                "end": {
+                  "line": 10,
+                  "column": 29
+                }
+              },
+              "name": "desktopDropDownMenuFontSize"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 237,
+              "end": 239,
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 31
+                },
+                "end": {
+                  "line": 10,
+                  "column": 33
+                }
+              },
+              "value": 15,
+              "rawValue": 15,
+              "raw": "15"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 244,
+            "end": 275,
+            "loc": {
+              "start": {
+                "line": 11,
+                "column": 2
+              },
+              "end": {
+                "line": 11,
+                "column": 33
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 244,
+              "end": 271,
+              "loc": {
+                "start": {
+                  "line": 11,
+                  "column": 2
+                },
+                "end": {
+                  "line": 11,
+                  "column": 29
+                }
+              },
+              "name": "desktopDrawerMenuItemHeight"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 273,
+              "end": 275,
+              "loc": {
+                "start": {
+                  "line": 11,
+                  "column": 31
+                },
+                "end": {
+                  "line": 11,
+                  "column": 33
+                }
+              },
+              "value": 48,
+              "rawValue": 48,
+              "raw": "48"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 280,
+            "end": 306,
+            "loc": {
+              "start": {
+                "line": 12,
+                "column": 2
+              },
+              "end": {
+                "line": 12,
+                "column": 28
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 280,
+              "end": 302,
+              "loc": {
+                "start": {
+                  "line": 12,
+                  "column": 2
+                },
+                "end": {
+                  "line": 12,
+                  "column": 24
+                }
+              },
+              "name": "desktopSubheaderHeight"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 304,
+              "end": 306,
+              "loc": {
+                "start": {
+                  "line": 12,
+                  "column": 26
+                },
+                "end": {
+                  "line": 12,
+                  "column": 28
+                }
+              },
+              "value": 48,
+              "rawValue": 48,
+              "raw": "48"
+            },
+            "kind": "init"
+          },
+          {
+            "type": "Property",
+            "start": 311,
+            "end": 335,
+            "loc": {
+              "start": {
+                "line": 13,
+                "column": 2
+              },
+              "end": {
+                "line": 13,
+                "column": 26
+              }
+            },
+            "method": false,
+            "shorthand": false,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "start": 311,
+              "end": 331,
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 2
+                },
+                "end": {
+                  "line": 13,
+                  "column": 22
+                }
+              },
+              "name": "desktopToolbarHeight"
+            },
+            "value": {
+              "type": "Literal",
+              "start": 333,
+              "end": 335,
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 24
+                },
+                "end": {
+                  "line": 13,
+                  "column": 26
+                }
+              },
+              "value": 56,
+              "rawValue": 56,
+              "raw": "56"
+            },
+            "kind": "init"
+          }
+        ],
+        "leadingComments": [],
+        "trailingComments": []
+      }
+    }
+  ]
+}
